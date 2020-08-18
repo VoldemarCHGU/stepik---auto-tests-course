@@ -1,2 +1,2 @@
-# stepik---auto-tests-course
+# stepik-homework-Valdemar21
 домашнее задание к курсу
