@@ -7,8 +7,9 @@ from selenium import webdriver
 class TestAbs(unittest.TestCase):
 
     def test_registration1(self):
+        browser = webdriver.Chrome("chromedriver.exe")
         link = "http://suninjuly.github.io/registration1.html"
-        browser = webdriver.Chrome()
+
         browser.get(link)
 
         # Ваш код, который заполняет обязательные поля
@@ -41,7 +42,7 @@ class TestAbs(unittest.TestCase):
 
     def test_registration2(self):
         link = "http://suninjuly.github.io/registration2.html"
-        browser = webdriver.Chrome()
+        browser = webdriver.Chrome("chromedriver.exe")
         browser.get(link)
 
         # Ваш код, который заполняет обязательные поля
@@ -70,6 +71,14 @@ class TestAbs(unittest.TestCase):
         browser.quit()
         # с помощью assert проверяем, что ожидаемый текст совпадает с текстом на странице сайта
         assert "Congratulations! You have successfully registered!" == welcome_text
+
+
+def test_abs1():
+    assert abs(-42) == 42, "Should be absolute value of a number"
+
+
+def test_abs2():
+    assert abs(-42) == -42, "Should be absolute value of a number"
 
 
 if __name__ == "__main__":
