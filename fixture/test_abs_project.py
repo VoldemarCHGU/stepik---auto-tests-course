@@ -7,7 +7,7 @@ from selenium import webdriver
 class TestAbs(unittest.TestCase):
 
     def test_registration1(self):
-        browser = webdriver.Chrome("chromedriver.exe")
+        browser = webdriver.Chrome("../chromedriver.exe")
         link = "http://suninjuly.github.io/registration1.html"
 
         browser.get(link)
@@ -42,7 +42,7 @@ class TestAbs(unittest.TestCase):
 
     def test_registration2(self):
         link = "http://suninjuly.github.io/registration2.html"
-        browser = webdriver.Chrome("chromedriver.exe")
+        browser = webdriver.Chrome("../chromedriver.exe")
         browser.get(link)
 
         # Ваш код, который заполняет обязательные поля

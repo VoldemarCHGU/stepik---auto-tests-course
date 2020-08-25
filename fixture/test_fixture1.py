@@ -8,7 +8,7 @@ class TestMainPage1():
     @classmethod
     def setup_class(self):
         print("\nСейчас я тут 1")
-        self.browser = webdriver.Chrome("chromedriver.exe")
+        self.browser = webdriver.Chrome("../chromedriver.exe")
 
     @classmethod
     def teardown_class(self):
